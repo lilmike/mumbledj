@@ -19,9 +19,9 @@ import (
 	"time"
 
 	"github.com/Sirupsen/logrus"
-	"github.com/layeh/gumble/gumble"
-	"github.com/layeh/gumble/gumbleffmpeg"
-	"github.com/layeh/gumble/gumbleutil"
+	"github.com/bmmcginty/gumble/gumble"
+	"github.com/bmmcginty/gumble/gumbleffmpeg"
+	"github.com/bmmcginty/gumble/gumbleutil"
 	"github.com/lilmike/mumbledj/interfaces"
 	"github.com/spf13/viper"
 )

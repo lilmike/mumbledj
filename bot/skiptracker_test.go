@@ -10,7 +10,7 @@ package bot
 import (
 	"testing"
 
-	"github.com/layeh/gumble/gumble"
+	"github.com/bmmcginty/gumble/gumble"
 	"github.com/stretchr/testify/suite"
 )
 

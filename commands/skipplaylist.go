@@ -11,7 +11,7 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/layeh/gumble/gumble"
+	"github.com/bmmcginty/gumble/gumble"
 	"github.com/lilmike/mumbledj/interfaces"
 	"github.com/spf13/viper"
 )

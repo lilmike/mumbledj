@@ -10,7 +10,7 @@ package commands
 import (
 	"errors"
 
-	"github.com/layeh/gumble/gumble"
+	"github.com/bmmcginty/gumble/gumble"
 	"github.com/spf13/viper"
 )
 

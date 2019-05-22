@@ -18,7 +18,7 @@ import (
 
 	"github.com/ChannelMeter/iso8601duration"
 	"github.com/antonholmquist/jason"
-	"github.com/layeh/gumble/gumble"
+	"github.com/bmmcginty/gumble/gumble"
 	"github.com/lilmike/mumbledj/bot"
 	"github.com/lilmike/mumbledj/interfaces"
 	"github.com/spf13/viper"

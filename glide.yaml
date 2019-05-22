@@ -11,7 +11,7 @@ import:
   version: v0.10.0
 - package: github.com/antonholmquist/jason
   version: v1.0.0
-- package: github.com/layeh/gumble
+- package: github.com/bmmcginty/gumble
   subpackages:
   - gumble
   - gumbleffmpeg

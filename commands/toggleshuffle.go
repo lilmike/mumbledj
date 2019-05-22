@@ -8,7 +8,7 @@
 package commands
 
 import (
-	"github.com/layeh/gumble/gumble"
+	"github.com/bmmcginty/gumble/gumble"
 	"github.com/spf13/viper"
 )
 
