@@ -94,7 +94,7 @@ func (dj *MumbleDJ) OnDisconnect(e *gumble.DisconnectEvent) {
 		success := false
 		for retries := 0; retries < viper.GetInt("connection.retry_attempts"); retries++ {
 			logrus.Infoln("Retrying connection...")
-			if client, err := gumble.DialWithDialer(new(net.Dialer), viper.GetString("connection.address")+":"+viper.GetString("connection.port"), dj.GumbleConfig, dj.TLSConfig); err == nil {
+			if client, err := gumble.DialWithDialer(new(net.Dialer), dj.GumbleConfig, dj.TLSConfig); err == nil {
 				dj.Client = client
 				logrus.Infoln("Successfully reconnected to the server!")
 				success = true
@@ -189,6 +189,8 @@ func (dj *MumbleDJ) Connect() error {
 
 	// Create Gumble config.
 	dj.GumbleConfig = gumble.NewConfig()
+	dj.GumbleConfig.Address = viper.GetString("connection.address")
+	dj.GumbleConfig.Port = viper.GetString("connection.port")
 	dj.GumbleConfig.Username = viper.GetString("connection.username")
 	dj.GumbleConfig.Password = viper.GetString("connection.password")
 	dj.GumbleConfig.Tokens = strings.Split(viper.GetString("connection.access_tokens"), ",")
@@ -258,7 +260,7 @@ func (dj *MumbleDJ) Connect() error {
 		"address": viper.GetString("connection.address"),
 		"port":    viper.GetString("connection.port"),
 	}).Infoln("Attempting connection to server...")
-	if dj.Client, connErr = gumble.DialWithDialer(new(net.Dialer), viper.GetString("connection.address")+":"+viper.GetString("connection.port"), dj.GumbleConfig, dj.TLSConfig); connErr != nil {
+	if dj.Client, connErr = gumble.DialWithDialer(new(net.Dialer), dj.GumbleConfig, dj.TLSConfig); connErr != nil {
 		return connErr
 	}
 
