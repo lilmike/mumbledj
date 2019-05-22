@@ -1,10 +1,10 @@
-package: github.com/matthieugrieger/mumbledj
-homepage: https://github.com/matthieugrieger/mumbledj
+package: github.com/lilmike/mumbledj
+homepage: https://github.com/lilmike/mumbledj
 license: MIT
 owners:
-- name: Matthieu Grieger
-  email: me@matthieugrieger.com
-  homepage: https://matthieugrieger.com
+- name: Michael Taboada
+  email: michael@michaels.world
+  homepage: https://michaels.world/
 import:
 - package: github.com/ChannelMeter/iso8601duration
 - package: github.com/Sirupsen/logrus

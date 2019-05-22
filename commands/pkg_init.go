@@ -8,8 +8,8 @@
 package commands
 
 import (
-	"github.com/matthieugrieger/mumbledj/bot"
-	"github.com/matthieugrieger/mumbledj/interfaces"
+	"github.com/lilmike/mumbledj/bot"
+	"github.com/lilmike/mumbledj/interfaces"
 )
 
 // DJ is an injected MumbleDJ struct.

@@ -11,7 +11,7 @@ import (
 	"testing"
 
 	"github.com/layeh/gumble/gumble"
-	"github.com/matthieugrieger/mumbledj/bot"
+	"github.com/lilmike/mumbledj/bot"
 	"github.com/spf13/viper"
 	"github.com/stretchr/testify/suite"
 )

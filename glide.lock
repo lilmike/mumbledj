@@ -26,15 +26,13 @@ imports:
   - json/token
 - name: github.com/layeh/gopus
   version: 867541549ca5f8b4db2b92fd1dded8711256a27d
-- name: github.com/layeh/gumble
-  version: f0a4a2992fa9a969ef90d673374bc63a9b7948ad
+- name: github.com/bmmcginty/gumble
+  version: e70df02bd08b34b373d5a428c847a66881e726aa
   subpackages:
   - gumble
   - gumbleffmpeg
   - gumbleutil
   - opus
-  - gumble/MumbleProto
-  - gumble/varint
 - name: github.com/magiconair/properties
   version: e2f061ecfdaca9f35b2e2c12346ffc526f138137
 - name: github.com/mitchellh/mapstructure

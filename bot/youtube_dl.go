@@ -13,7 +13,7 @@ import (
 	"os/exec"
 
 	"github.com/Sirupsen/logrus"
-	"github.com/matthieugrieger/mumbledj/interfaces"
+	"github.com/lilmike/mumbledj/interfaces"
 	"github.com/spf13/viper"
 )
 

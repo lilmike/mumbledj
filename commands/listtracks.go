@@ -14,7 +14,7 @@ import (
 	"strconv"
 
 	"github.com/layeh/gumble/gumble"
-	"github.com/matthieugrieger/mumbledj/interfaces"
+	"github.com/lilmike/mumbledj/interfaces"
 	"github.com/spf13/viper"
 )
 
