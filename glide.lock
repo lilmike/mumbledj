@@ -1,6 +1,8 @@
 hash: b68f7c8a3b59d7dac3e12321ed6a2265b553c2856ae70e0ed5e960ba8412f8d8
 updated: 2016-07-11T16:01:20.19606261-07:00
 imports:
+- name: layeh.com/gopus
+  version: 0ebf989153aa016ef5e77141b08c48e48a79312e
 - name: github.com/timshannon/go-openal
   version: e0ed4c67cffe43abb9f48479938df07e8f2cf9ca
   subpackages:

@@ -27,3 +27,4 @@ import:
 - package: github.com/timshannon/go-openal
   subpackages:
     - openal
+- package: layeh.com/gopus
