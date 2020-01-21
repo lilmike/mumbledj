@@ -1,66 +1,96 @@
-hash: b68f7c8a3b59d7dac3e12321ed6a2265b553c2856ae70e0ed5e960ba8412f8d8
-updated: 2016-07-11T16:01:20.19606261-07:00
+hash: a7e784ad6ad66de82174a599a8447072c86f6ca934712824cd42eef86c2198be
+updated: 2020-01-21T07:10:54.481886202-08:00
 imports:
-- name: layeh.com/gopus
-  version: 0ebf989153aa016ef5e77141b08c48e48a79312e
-- name: github.com/timshannon/go-openal
-  version: e0ed4c67cffe43abb9f48479938df07e8f2cf9ca
-  subpackages:
-  - openal
 - name: github.com/antonholmquist/jason
   version: c23cef7eaa75a6a5b8810120e167bd590d8fd2ab
+- name: github.com/bmmcginty/go-openal
+  version: d96453c14e3845e66767497e8f4d8d4f60c3975c
+  subpackages:
+  - openal
+- name: github.com/bmmcginty/gumble
+  version: 86f9427e5965b4becba26fc936e8e9cf785c4115
+  subpackages:
+  - gumble
+  - gumble/MumbleProto
+  - gumble/varint
+  - gumbleffmpeg
+  - gumbleutil
+  - opus
 - name: github.com/BurntSushi/toml
   version: bbd5bb678321a0d6e58f1099321dfa73391c1b6f
 - name: github.com/ChannelMeter/iso8601duration
   version: 8da3af7a2a61a4eb5ae9bddec06bf637fa9593da
 - name: github.com/fsnotify/fsnotify
-  version: a8a77c9133d2d6fd8334f3260d06f60e8d80a5fb
+  version: 4bf2d1fec78374803a39307bfb8d340688f4f28e
 - name: github.com/golang/protobuf
-  version: 3852dcfda249c2097355a6aabb199a28d97b30df
+  version: 4e55bbcbfaa105a596caba5bbc20d392806beda9
   subpackages:
   - proto
 - name: github.com/hashicorp/hcl
-  version: 364df430845abef160a0bfb3a59979f746bf4956
+  version: 914dc3f8dd7c463188c73fc47e9ced82a6e421ca
   subpackages:
   - hcl/ast
   - hcl/parser
-  - hcl/token
-  - json/parser
+  - hcl/printer
   - hcl/scanner
   - hcl/strconv
+  - hcl/token
+  - json/parser
   - json/scanner
   - json/token
-- name: github.com/layeh/gopus
-  version: 867541549ca5f8b4db2b92fd1dded8711256a27d
-- name: github.com/bmmcginty/gumble
-  version: e70df02bd08b34b373d5a428c847a66881e726aa
-  subpackages:
-  - gumble
-  - gumbleffmpeg
-  - gumbleutil
-  - opus
 - name: github.com/magiconair/properties
-  version: e2f061ecfdaca9f35b2e2c12346ffc526f138137
+  version: a586bb8b7deaae2a0eb4c6c8b63a539425628137
 - name: github.com/mitchellh/mapstructure
-  version: d2dd0262208475919e1a362f675cfc0e7c10e905
+  version: 3536a929edddb9a5b34bd6861dc4a9647cb459fe
+- name: github.com/pelletier/go-toml
+  version: 80f8b7660b8fe0461e88bbe600e145f7bbcdab8c
 - name: github.com/Sirupsen/logrus
   version: 4b6ea7319e214d98c938f12692336f7ca9348d6b
+- name: github.com/spf13/afero
+  version: 588a75ec4f32903aa5e39a2619ba6a4631e28424
+  subpackages:
+  - mem
 - name: github.com/spf13/cast
-  version: 27b586b42e29bec072fe7379259cc719e1289da6
+  version: 1ffadf551085444af981432dd0f6d1160c11ec64
 - name: github.com/spf13/jwalterweatherman
-  version: 33c24e77fb80341fe7130ee7c594256ff08ccc46
+  version: 94f6ae3ed3bceceafa716478c5fbf8d29ca601a1
 - name: github.com/spf13/pflag
-  version: 367864438f1b1a3c7db4da06a2f55b144e6784e0
+  version: 2e9d26c8c37aae03e3f9d4e90b7116f5accb7cab
 - name: github.com/spf13/viper
-  version: c1ccc378a054ea8d4e38d8c67f6938d4760b53dd
+  version: f2cbaea4c2e08954512f2cd2619033bdb4f87969
 - name: github.com/stretchr/testify
   version: f390dcf405f7b83c997eac1b06768bb9f44dec18
+  subpackages:
+  - assert
+  - require
+  - suite
+- name: github.com/subosito/gotenv
+  version: de67a6614a4de71ad5e380b6946e56ab957d58c5
+- name: github.com/timshannon/go-openal
+  version: e0ed4c67cffe43abb9f48479938df07e8f2cf9ca
+  subpackages:
+  - openal
 - name: github.com/urfave/cli
   version: 01857ac33766ce0c93856370626f9799281c14f4
-- name: golang.org/x/sys
-  version: a408501be4d17ee978c04a618e7a1b22af058c0e
+- name: golang.org/x/sys/unix
+  version: 34d275377bf96a094e8d5b0c61750ddd54cd6b36
+- name: golang.org/x/text
+  version: 929e72ca90deac4784bbe451caf10faa5b256ebe
   subpackages:
-  - unix
+  - transform
+  - unicode/norm
+- name: gopkg.in/ini.v1
+  version: 94291fffe2b14f4632ec0e67c1bfecfc1287a168
 - name: gopkg.in/yaml.v2
-  version: a83829b6f1293c91addabc89d0571c246397bbf4
-devImports: []
+  version: 1f64d6156d11335c3f22d9330b0ad14fc1e789ce
+- name: layeh.com/gopus
+  version: 0ebf989153aa016ef5e77141b08c48e48a79312e
+testImports:
+- name: github.com/davecgh/go-spew
+  version: 2df174808ee097f90d259e432cc04442cf60be21
+  subpackages:
+  - spew
+- name: github.com/pmezard/go-difflib
+  version: d8ed2627bdf02c080bf22230dbb337003b7aba2d
+  subpackages:
+  - difflib

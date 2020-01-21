@@ -3,7 +3,7 @@ package gumble
 import (
 	"github.com/golang/protobuf/proto"
 	"github.com/bmmcginty/gumble/gumble/MumbleProto"
-"github.com/timshannon/go-openal/openal"
+"github.com/bmmcginty/go-openal/openal"
 )
 
 // User represents a user that is currently connected to the server.
@@ -51,8 +51,9 @@ type User struct {
 	client  *Client
 	decoder AudioDecoder
 
- AudioSource openal.Source
- volume float32
+ AudioSource *openal.Source
+Boost uint16
+ Volume float32
 }
 
 func (u *User) GetClient() *Client {
